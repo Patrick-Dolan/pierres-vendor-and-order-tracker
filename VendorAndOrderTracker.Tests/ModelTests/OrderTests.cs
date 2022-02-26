@@ -1,12 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VendorAndOrderTracker.Models;
 using System;
+using System.Collections.Generic;
 
 namespace VendorAndOrderTracker.Tests
 {
   [TestClass]
-  public class OrderTests 
+  public class OrderTests : IDisposable
   {
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
     [TestMethod]
     public void OrderConstructor_CreatesAnOrderObject_Order()
     {
@@ -61,6 +66,24 @@ namespace VendorAndOrderTracker.Tests
       Order newOrder = new Order(title, description, price, date);
       string result = newOrder.Date;
       Assert.AreEqual(date, newOrder.Date);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newList = new List<Order> { };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsOrderList_OrderList()
+    {
+      Order newOrder1 = new Order("title", "description", 15, "date");
+      Order newOrder2 = new Order("title", "description", 18, "date");
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }
