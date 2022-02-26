@@ -7,14 +7,12 @@ namespace VendorAndOrderTracker
     public int Price { get; set; }
     public string Date { get; set; }
 
-    public Order(string title)
+    public Order(string title, string description, int price, string date)
     {
       Title = title;
-    }
-    public Order(string title, string description)
-      : this(title)
-    {
       Description = description;
+      Price = price;
+      Date = date;
     }
   }
 }
