@@ -39,6 +39,16 @@ namespace VendorAndOrderTracker.Tests
     }
 
     [TestMethod]
+    public void OverloadConstructorDescription_ReturnsDescription_String()
+    {
+      string vendorName = "Vendor Name Here";
+      string vendorDescription = "A vendor that pierre sells to";
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      string result = newVendor.Description;
+      Assert.AreEqual(vendorDescription, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
       string name1 = "Tester Vendor 1";
