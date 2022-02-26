@@ -11,5 +11,10 @@ namespace VendorAndOrderTracker
     {
       Title = title;
     }
+    public Order(string title, string description)
+      : this(title)
+    {
+      Description = description;
+    }
   }
 }
