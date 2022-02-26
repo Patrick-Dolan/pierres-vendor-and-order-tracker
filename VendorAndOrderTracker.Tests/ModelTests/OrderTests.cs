@@ -85,5 +85,13 @@ namespace VendorAndOrderTracker.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetId_ReturnsOrderId_Int()
+    {
+      Order newOrder = new Order("title", "description", 15, "date");
+      int result = newOrder.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
