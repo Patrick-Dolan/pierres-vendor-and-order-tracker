@@ -1,8 +1,8 @@
-# {Application name here}
+# Vendor and Order Tracker
 
-#### By _**{List of contributors}**_
+#### By _**Patrick Dolan**_
 
-#### _{Brief description of application}_
+#### _Vendor and Order tracker for Pierres Bakery._
 
 <!-- ## Github Pages Link
 
@@ -16,15 +16,15 @@
 
 ## Description
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}
+Vendor and Order tracker for Pierres Bakery.
 
 ## Setup/Installation Requirements
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* Clone or download the repo to your computer.
+* Navigate into the newly downloaded repo with the name <code>pierres-vendor-and-order-tracker</code>.
+* Once in side the folder open it with your terminal/code editor of choice.
+* to run the program navigate into "pierres-vendor-and-order-tracker/VendorAndOrderTracker/"
+* Now type the command: <br><code>dotnet run</code>
 
 ### Test Setup/Installation
 [Resource on how to build/use this template](https://www.learnhowtoprogram.com/c-and-net-part-time/test-driven-development-with-c/mstest-configuration-quick-reference)
@@ -33,12 +33,8 @@
 * Navigate to ProjectName.Tests directory in your terminal
 * Run the following command to setup testing:  
 <code>dotnet restore</code>
-* <strong>Make sure to rename ProjectName & ClassName in ProjectName.Tests to match those in the ProjectName directory tree.</strong>  
-* Rename the ProjectName in the following files for use: ProjectName in all folder its included in, Homecontroller.cs, ClassName.cs, PageName.cshtml, Program.cs, and Startup.cs.
 * Run tests by going to the test project in the terminal (ProjectName.Solution/ProjectName.Tests) and running the following command:  
 <code>dotnet test</code>  
-<br>
-* When renaming project files for new project make sure to rename all fields with "ProjectName" as the directory/file name. This includes line 13 of "ProjectName.Tests.csproj" to the names of your directories. 
 
 ## Known Bugs
 
@@ -47,10 +43,10 @@
 ## Contact Me
 
 Let me know if you run into any issues or have questions, ideas or concerns:  
-{PUT EMAIL HERE}
+dolanp1992@gmail.com
 
 ## License
 
 _MIT_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _2022_ _Patrick Dolan_
