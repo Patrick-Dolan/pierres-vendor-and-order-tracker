@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using VendorAndOrderTracker.Models;
 
-namespace ProjectName.Tests
+namespace VendorAndOrderTracker.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class VendorTests
   {
     // Test methods go here
   }
