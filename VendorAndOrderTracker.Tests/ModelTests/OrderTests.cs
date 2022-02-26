@@ -19,6 +19,17 @@ namespace VendorAndOrderTracker.Tests
     }
 
     [TestMethod]
+    public void GetTitle_ReturnsOrderTitle_String()
+    {
+      string title = "7 Bread";
+      string description = "The vendor wants bread this time";
+      int price = 15;
+      string date = "january 12";
+      Order newOrder = new Order(title, description, price, date);
+      string result = newOrder.Title;
+      Assert.AreEqual(title, newOrder.Title);
+    }
+    [TestMethod]
     public void GetDescription_ReturnsOrderDescription_String()
     {
       string title = "7 Bread";
