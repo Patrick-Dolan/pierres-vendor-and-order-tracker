@@ -8,7 +8,29 @@
   </head>
   <body>
     <div class="container">
-      @RenderBody()
+      <div class="row">
+        <div class="col">
+          <!-- Header -->
+          <h1>Pierres Vendor and Order Tracker</h1>
+          <!-- Nav -->
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Much longer nav link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <hr>
+          @RenderBody()
+        </div>
+      </div>
     </div>
   </body>
 </html>
