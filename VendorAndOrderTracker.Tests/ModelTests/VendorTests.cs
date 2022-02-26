@@ -1,11 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VendorAndOrderTracker.Models;
+using System;
 
 namespace VendorAndOrderTracker.Tests
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
+
     [TestMethod]
     public void VendorConstructor_CreatesAVendorObject_Vendor()
     {
@@ -20,6 +26,15 @@ namespace VendorAndOrderTracker.Tests
       Vendor newVendor = new Vendor(vendorName);
       string result = newVendor.Name;
       Assert.AreEqual(vendorName, result);
+    }
+
+    [TestMethod]
+    public void ReturnId_ReturnsVendorId_Int()
+    {
+      string vendorName = "Test Vendor";
+      Vendor newVendor = new Vendor(vendorName);
+      int result = newVendor.Id;
+      Assert.AreEqual(1, result);
     }
   }
 }
