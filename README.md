@@ -27,7 +27,7 @@ Vendor and Order tracker for Pierres Bakery.
 * Now type the command: <br><code>dotnet run</code>
 
 ### Test Setup/Installation
-[Resource on how to build/use this template](https://www.learnhowtoprogram.com/c-and-net-part-time/test-driven-development-with-c/mstest-configuration-quick-reference)
+<!-- [Resource on how to build/use this template](https://www.learnhowtoprogram.com/c-and-net-part-time/test-driven-development-with-c/mstest-configuration-quick-reference) -->
 
 * Open the repo on your editor of choice/terminal
 * Navigate to ProjectName.Tests directory in your terminal
