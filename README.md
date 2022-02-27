@@ -16,7 +16,7 @@
 
 ## Description
 
-Vendor and Order tracker for Pierres Bakery.
+Vendor and Order tracker for Pierres Bakery. Allows the user to set up simple vendor lists containing name, description, and the orders that the vendor places. The orders can be made once a vendor is set up and can contain the info on title of order, description, price and date made.
 
 ## Setup/Installation Requirements
 
