@@ -8,12 +8,14 @@ namespace VendorAndOrderTracker.Models
     public string Name { get; set; }
     public string Description { get; set; }
     public int Id { get; }
+    public List<Order> Orders { get; set; }
 
     public Vendor(string vendorName)
     {
       Name = vendorName;
       _instances.Add(this);
       Id = _instances.Count;
+      Orders = new List<Order> {};
     }
 
     public Vendor(string vendorName, string description)
@@ -35,6 +37,11 @@ namespace VendorAndOrderTracker.Models
     public static Vendor Find(int searchId)
     {
       return _instances[searchId - 1];
+    }
+
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
     }
   }
 }
